@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="601.0" prefWidth="578.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.orders_management.gui.ProductViewController">
+   <children>
+      <Label layoutX="219.0" layoutY="56.0" text="Product">
+         <font>
+            <Font name="Cambria Bold" size="38.0" />
+         </font>
+      </Label>
+      <VBox layoutX="86.0" layoutY="165.0" prefHeight="371.0" prefWidth="406.0">
+         <children>
+            <VBox styleClass="vbox" stylesheets="@styles.css">
+               <children>
+                  <Label text="Name">
+                     <font>
+                        <Font name="Cambria Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="nameTextField" prefHeight="35.0" prefWidth="274.0" promptText="Gucci Chain" styleClass="text-field2" stylesheets="@styles.css">
+                     <font>
+                        <Font name="Cambria Bold" size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox styleClass="vbox" stylesheets="@styles.css">
+               <children>
+                  <Label text="Price">
+                     <font>
+                        <Font name="Cambria Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="priceTextField" prefHeight="35.0" prefWidth="274.0" promptText="\$150.90" styleClass="text-field2" stylesheets="@styles.css">
+                     <font>
+                        <Font name="Cambria Bold" size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox styleClass="vbox" stylesheets="@styles.css">
+               <children>
+                  <Label text="Stock Quantity">
+                     <font>
+                        <Font name="Cambria Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="stockQuantityTextField" prefHeight="35.0" prefWidth="274.0" promptText="150" styleClass="text-field2" stylesheets="@styles.css">
+                     <font>
+                        <Font name="Cambria Bold" size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+      <Button fx:id="cancelButton" layoutX="123.0" layoutY="515.0" mnemonicParsing="false" onAction="#onCancelButtonClick" styleClass="operation-button" stylesheets="@styles.css" text="Cancel">
+         <font>
+            <Font name="Cambria Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="applyButton" layoutX="359.0" layoutY="515.0" mnemonicParsing="false" onAction="#onApplyButton" styleClass="operation-button" stylesheets="@styles.css" text="Apply">
+         <font>
+            <Font name="Cambria Bold" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
